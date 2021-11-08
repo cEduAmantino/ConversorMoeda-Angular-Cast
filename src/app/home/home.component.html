@@ -1,0 +1,31 @@
+
+<link rel="stylesheet" href="home.component.css">
+<body>
+ 
+  
+    
+    <div class="conversor">
+      <h4> Conversor de Moeda</h4>
+      <select [(ngModel)]="moeda1" class="form-select" aria-label="Default select example">
+        <option disabled="true">Selecione a moeda atual</option>
+        <option *ngFor="let item of lista" [value]="item.high">{{item.name}}</option>
+      </select><br>
+      <h6>Digite o valor:</h6>
+      <input class="valor" [(ngModel)]="valor" type="number" value=""><br><br>
+  
+    <button (click)="fazerConversao()" class="btn-warning btn-convert">Converter</button><br><br>
+    <div class="result">
+      
+      <b>Resultado:</b>
+      {{resultadoConversao}} R$
+    </div>
+      
+    </div>
+  
+
+
+    
+  
+ 
+</body>
+

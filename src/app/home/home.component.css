@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+}
+body {
+  background-image: url("img/moeda.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+}
+.result, h4{
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.conversor {
+  width: 280px;
+  height: 270px;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  transition: background 1s;
+  border-radius: 15px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.conversor:hover{
+  width: 280px;
+  height: 270px;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 15px;
+  border: 2px solid rgb(251, 255, 0);
+}
+
+select{
+  border-radius: 10px;
+}
+option{
+  border-radius: 10px;
+}
+
+.valor{
+  width: 100px;
+  text-align: center;
+}
+.form-select{
+  text-align: center;
+}
+
+button{
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  border: 2px solid white;
+  transition: background 1s;
+}
+button:hover{
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: yellow;
+}
+
+h6{
+  font-weight: bold;
+  color: white;
+}
